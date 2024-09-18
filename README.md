@@ -8,3 +8,10 @@ Detta repo innehåller genomgångar, demon och lösningsförslag för WIE24S.
 - Variabler
 - Operationer
 - Hur startar vi?
+
+## JS - Functions - DOM
+
+- Enklare funktioner
+- Parametrar/Argument
+- return
+- DOM
