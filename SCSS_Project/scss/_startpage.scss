@@ -1,0 +1,45 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.container {
+  @include m.box(v.$color-primary);
+
+  &__text {
+    font-size: 1.5rem;
+
+    &--important {
+      color: white;
+      font-style: italic;
+    }
+
+    @include m.forSize(tablet) {
+      font-size: 1.1rem;
+    }
+
+    @include m.forSize(desktop) {
+      font-size: 1rem;
+    }
+  }
+
+  &:hover {
+    background-color: blue;
+  }
+
+  @include m.forSize(tablet) {
+    background-color: grey;
+  }
+
+  @include m.forSize(desktop) {
+    background-color: aquamarine;
+  }
+}
+
+.container--small {
+  @include m.box(aqua, 300px);
+
+  @include m.forSize(tablet) {
+  }
+
+  @include m.forSize(desktop) {
+  }
+}

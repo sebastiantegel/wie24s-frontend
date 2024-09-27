@@ -1,0 +1,43 @@
+.container {
+  padding: 0.75rem;
+  background-color: #aa3cc1;
+  width: 100%;
+}
+.container__text {
+  font-size: 1.5rem;
+}
+.container__text--important {
+  color: white;
+  font-style: italic;
+}
+@media screen and (min-width: 768px) {
+  .container__text {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__text {
+    font-size: 1rem;
+  }
+}
+.container:hover {
+  background-color: blue;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: grey;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    background-color: aquamarine;
+  }
+}
+
+.container--small {
+  padding: 0.75rem;
+  background-color: aqua;
+  width: 300px;
+}
+
+/*# sourceMappingURL=main.css.map */

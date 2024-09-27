@@ -1,0 +1,21 @@
+@use "variables" as v;
+
+@mixin box($color, $size: 100%) {
+  padding: v.$padding-medium;
+  background-color: $color;
+
+  width: $size;
+}
+
+@mixin forSize($size) {
+  @if ($size == tablet) {
+    @media screen and (min-width: v.$tablet) {
+      @content;
+    }
+  }
+  @if ($size == desktop) {
+    @media screen and (min-width: v.$desktop) {
+      @content;
+    }
+  }
+}
